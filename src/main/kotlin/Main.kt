@@ -1,7 +1,10 @@
 fun main() {
-    val price = 31.90
-    val product = "iMac"
-    val age = 34
+   //For your variable to accept a null value you need to put a dot ? after her
+    var product:String? = "iMac" // this way String starts accepting null value, that is, it becomes nullable
+    println(product)
+    product = "iPhone"
+    println(product)
+    product = null
 
-    println(price::class)// Inside println if you put ::class the type of this variable will be printed (int, double, string, bool, ...)
+    println(product)
 }
