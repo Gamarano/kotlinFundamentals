@@ -1,11 +1,27 @@
 fun main() {
-    val userA = User()
-    val userB = User()
+    var calc1 = Calculator(1.0,2.0)
+    var calc2 = Calculator(-15.0,-2.0)
+    var calc3 = Calculator(10.0,5.5)
+    var calc4 = Calculator(15.0,0.0)
 
-    userA.name = "Thulio"
-    userB.name = "Nayara"
-
-    userA.printUppercase()
-    println(userB.name)
-    println(userA.name)
+    println("Calculos de 1 e 2")
+    println(calc1.addition())
+    println(calc1.subtraction())
+    println(calc1.multiplication())
+    println(calc1.division())
+    println("Calculos de -15 e -2")
+    println(calc2.addition())
+    println(calc2.subtraction())
+    println(calc2.multiplication())
+    println(calc2.division())
+    println("Calculos de 10 e 5.5")
+    println(calc3.addition())
+    println(calc3.subtraction())
+    println(calc3.multiplication())
+    println(calc3.division())
+    println("Calculos de 15 e 0")
+    println(calc4.addition())
+    println(calc4.subtraction())
+    println(calc4.multiplication())
+    println(calc4.division())
 }
